@@ -11,7 +11,7 @@ import SwiftUI
 struct ReadySetBeepApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OverviewView()
         }
     }
 }

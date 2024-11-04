@@ -23,15 +23,44 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C88C86952CD7CC4D00DE279A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C88C867C2CD7CC4A00DE279A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C88C867E2CD7CC4A00DE279A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C88C869B2CD7CECD00DE279A /* app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = app.entitlements; sourceTree = "<group>"; };
 		C8B4A8D52CD562D000F8AC46 /* ReadySetBeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadySetBeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B4A8E52CD562D200F8AC46 /* ReadySetBeepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadySetBeepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B4A8EF2CD562D200F8AC46 /* ReadySetBeepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadySetBeepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C88C86752CD7CB0600DE279A /* Exceptions for "ReadySetBeep" folder in "ReadySetBeep" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C8B4A8D42CD562D000F8AC46 /* ReadySetBeep */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C8B4A8D72CD562D000F8AC46 /* ReadySetBeep */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C88C86752CD7CB0600DE279A /* Exceptions for "ReadySetBeep" folder in "ReadySetBeep" target */,
+			);
 			path = ReadySetBeep;
 			sourceTree = "<group>";
 		};
@@ -72,12 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C88C867B2CD7CC4A00DE279A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C88C867C2CD7CC4A00DE279A /* WidgetKit.framework */,
+				C88C867E2CD7CC4A00DE279A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8B4A8CC2CD562D000F8AC46 = {
 			isa = PBXGroup;
 			children = (
+				C88C869B2CD7CECD00DE279A /* app.entitlements */,
 				C8B4A8D72CD562D000F8AC46 /* ReadySetBeep */,
 				C8B4A8E82CD562D200F8AC46 /* ReadySetBeepTests */,
 				C8B4A8F22CD562D200F8AC46 /* ReadySetBeepUITests */,
+				C88C867B2CD7CC4A00DE279A /* Frameworks */,
 				C8B4A8D62CD562D000F8AC46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +142,7 @@
 				C8B4A8D12CD562D000F8AC46 /* Sources */,
 				C8B4A8D22CD562D000F8AC46 /* Frameworks */,
 				C8B4A8D32CD562D000F8AC46 /* Resources */,
+				C88C86952CD7CC4D00DE279A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -170,7 +211,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					C8B4A8D42CD562D000F8AC46 = {
@@ -396,8 +437,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReadySetBeep/Preview Content\"";
+				DEVELOPMENT_TEAM = 2AJ8ANZWKK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReadySetBeep/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ready, Set, Beep!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,8 +469,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReadySetBeep/Preview Content\"";
+				DEVELOPMENT_TEAM = 2AJ8ANZWKK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReadySetBeep/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ready, Set, Beep!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
